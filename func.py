@@ -16,7 +16,7 @@ def update_nsg(network_client, network_security_group_id, destip):
             oci.core.models.AddSecurityRuleDetails(
                 direction="EGRESS",
                 protocol="6",
-                description="BS_ZT-SecurityRule (Automated Creation)",
+                description="FQDN2NSG-SecurityRule (Automated Creation)",
                 destination=(destip.address + cidr),
                 destination_type="CIDR_BLOCK",
                 is_stateless=False,
